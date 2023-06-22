@@ -4,8 +4,7 @@
  *  * f_push - function that pushes a value to the stack
  *   * @stack: stack head
  *    * @line_number: line number
- *     *@free_stack: frees the stack
- *      *@value: value of stack to be freed
+ *     *
  */
 
 void f_push(stack_t **stack, unsigned int line_number)
