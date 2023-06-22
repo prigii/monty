@@ -51,7 +51,8 @@ int _isdigit(char *value);
 void f_pop(stack_t **stack, unsigned int line_number);
 void f_swap(stack_t **stack, unsigned int line_number);
 void f_add(stack_t **stack, unsigned int line_number);
-void f_nop(stack_t **stack, unsigned int line_number);
+void f_nop(__attribute__((unused)) stack_t **stack,
+	__attribute__((unused)) unsigned int line_number);
 void f_sub(stack_t **stack, unsigned int line_number);
 void f_div(stack_t **stack, unsigned int line_number);
 void f_mul(stack_t **stack, unsigned int line_number);
