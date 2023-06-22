@@ -10,6 +10,7 @@
 
 void f_push(stack_t **stack, unsigned int line_number)
 {
+char *value = value;
 stack_t *node = malloc(sizeof(stack_t));
 int x;
 if (value == NULL)

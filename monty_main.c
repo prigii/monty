@@ -8,6 +8,7 @@
  */
 
 #define MAX_LINE_LENGTH 1024
+
 int main(int argc, char *argv[])
 {
 FILE *fp;

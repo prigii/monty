@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- *  * _isdigit - this is a function to show whether a string is a digit
- *  * @value: the value of the string or digit
- *   * Return: void
+ * _isdigit - this is a function to show whether a string is a digit
+ * @value: the value of the string or digit
+ * Return: void
  */
 int _isdigit(char *value)
 {
