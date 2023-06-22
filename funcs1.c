@@ -7,7 +7,7 @@
  *     * @value: value to be pushed
  */
 
-void push(stack_t **stack, unsigned int line_number, char *value)
+void f_push(stack_t **stack, unsigned int line_number)
 {
 stack_t *node = malloc(sizeof(stack_t));
 int x;
@@ -31,7 +31,7 @@ if (*stack != NULL)
 *   * @stack: stack
 *    * @line_number: line number
 */
-void pall(stack_t **stack, __attribute__((unused)) unsigned int line_number)
+void f_pall(stack_t **stack, __attribute__((unused)) unsigned int line_number)
 {
 stack_t *tmp = *stack;
 while (tmp != NULL)
@@ -47,7 +47,7 @@ tmp = tmp->next;
  *   * @stack: stack
  *    * @line_number: line number
  */
-void pint(stack_t **stack, unsigned int line_number)
+void f_pint(stack_t **stack, unsigned int line_number)
 {
 if (*stack == NULL)
 {
@@ -63,7 +63,7 @@ printf("%d\n", (*stack)->n);
  *   * @opcode: opcode
  *    * @line_number: line number
  */
-void err_push(char *opcode, unsigned int line_number)
+void push_err(char *opcode, unsigned int line_number)
 {
 fprintf(stderr, "L%d: can't %s, stack too short\n",
 line_number, opcode);

@@ -26,7 +26,7 @@ struct stack_s *next;
 } stack_t;
 
 /*
- *  * struct instruction_s - opcode and its function
+` *  * struct instruction_s - opcode and its function
  *   * @opcode: the opcode
  *    * @f: function to handle the opcode
  *     *
@@ -58,5 +58,9 @@ void f_mul(stack_t **stack, unsigned int line_number);
 void f_mod(stack_t **stack, unsigned int line_number);
 void f_pchar(stack_t **stack, unsigned int line_number);
 void f_pstr(stack_t **stack, unsigned int line_number);
+void push_err(char *opcode, unsigned int line_number);
+void f_queue(stack_t **stack, unsigned int line_number);
+void addqueue(stack_t **stack, int n);
+void addnode(stack_t **stack, int n);
 
 #endif

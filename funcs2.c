@@ -4,7 +4,7 @@
  *   * @stack: this is the stack
  *    * @line_number: the number of the line
  */
-void pop(stack_t **stack, unsigned int line_number)
+void f_pop(stack_t **stack, unsigned int line_number)
 {
 stack_t *tmp;
 if (*stack == NULL)
@@ -24,7 +24,7 @@ free(tmp);
 *    * @line_number: the number of the line
 */
 
-void swap(stack_t **stack, unsigned int line_number)
+void f_swap(stack_t **stack, unsigned int line_number)
 {
 stack_t *tmp;
 if (*stack == NULL || (*stack)->next == NULL)
@@ -48,7 +48,7 @@ tmp->next = *stack;
 *   * @stack: the stacks to be added
 *    * @line_number: the number of the lin
 */
-void add(stack_t **stack, unsigned int line_number)
+void f_add(stack_t **stack, unsigned int line_number)
 {
 if (*stack == NULL || (*stack)->next == NULL)
 {
@@ -57,7 +57,7 @@ free_stack(*stack);
 exit(EXIT_FAILURE);
 }
 (*stack)->next->n += (*stack)->n;
-pop(stack, line_number);
+f_pop(stack, line_number);
 }
 
 /**
