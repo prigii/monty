@@ -39,7 +39,7 @@ char *opcode;
 void (*f)(stack_t **stack, unsigned int line_number);
 
 } instruction_t;
-void f_push(stack_t **stack, unsigned int line_number, char *value);
+void f_push(stack_t **stack, unsigned int line_number);
 void f_pall(stack_t **stack, unsigned int line_number);
 void f_pint(stack_t **stack, unsigned int line_number);
 void execute(char *line, stack_t **stack, unsigned int line_number);

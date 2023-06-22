@@ -7,7 +7,8 @@
  *     * @value: value of the string
  */
 
-void f_push(stack_t **stack, unsigned int line_number, char *value)
+void f_push(stack_t **stack, unsigned int line_number)
 {
-f_push(stack, line_number, value);
+char *value = value;
+f_push(stack, line_number);
 }
