@@ -7,6 +7,8 @@
 #include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
+
+extern char *value;
 /**
  *  * struct stack_s - doubly linked list representation of a stack (or queue)
  *   * @n: integer
@@ -23,7 +25,7 @@ struct stack_s *prev;
 struct stack_s *next;
 } stack_t;
 
-/**
+/*
  *  * struct instruction_s - opcode and its function
  *   * @opcode: the opcode
  *    * @f: function to handle the opcode
