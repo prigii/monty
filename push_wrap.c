@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- *  * push_wrapper - function
+ *  * f_push - function
  *   * @stack: stack
  *    * @line_number: line number
- *     */
+ *     * @value: value of the string
+ */
 
-void push_wrapper(stack_t **stack, unsigned int line_number)
+void f_push(stack_t **stack, unsigned int line_number, char *value)
 {
-		char *value = value;
-			push(stack, line_number, value);
+f_push(stack, line_number, value);
 }
