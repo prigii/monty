@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- *  * exe - function that executes a line
+ *  * execute - function that executes a line
  *   * @line: the line that will be executed
  *    * @stack: the stack
  *     * @line_number: Line number

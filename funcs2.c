@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- *  * pop - this is the function pop
+ *  * f_pop - this is the function pop
  *   * @stack: this is the stack
  *    * @line_number: the number of the line
  */
@@ -19,7 +19,7 @@ free(tmp);
 }
 
 /**
-*  * swap - this is the function that swaps between two stacks
+*  * f_swap - this is the function that swaps between two stacks
 *   * @stack: the stack
 *    * @line_number: the number of the line
 */
@@ -44,7 +44,7 @@ tmp->next = *stack;
 }
 
 /**
-*  * add - function that adds the stacks
+*  * f_add - function that adds the stacks
 *   * @stack: the stacks to be added
 *    * @line_number: the number of the lin
 */
@@ -61,11 +61,11 @@ f_pop(stack, line_number);
 }
 
 /**
- *  * nop - this is the function nope
+ *  * f_nop - this is the function nope
  *   * @stack: the stack to be used
  *    * @line_number: the number of the line
  */
-void nop(__attribute__((unused)) stack_t **stack,
+void f_nop(__attribute__((unused)) stack_t **stack,
 __attribute__((unused)) unsigned int line_number)
 {
 }

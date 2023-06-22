@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *  * push - function that pushes a value to the stack
+ *  * f_push - function that pushes a value to the stack
  *   * @stack: stack
  *    * @line_number: line number
- *     * @value: value to be pushed
+ *     *
  */
 
 void f_push(stack_t **stack, unsigned int line_number)
@@ -27,7 +27,7 @@ if (*stack != NULL)
 }
 
 /**
-*  * pall - prints all values on the stack
+*  * f_pall - prints all values on the stack
 *   * @stack: stack
 *    * @line_number: line number
 */
@@ -43,7 +43,7 @@ tmp = tmp->next;
 }
 
 /**
- *  * pint - prints the value at the top of the stack
+ *  * f_pint - prints the value at the top of the stack
  *   * @stack: stack
  *    * @line_number: line number
  */
@@ -59,7 +59,7 @@ printf("%d\n", (*stack)->n);
 }
 
 /**
- *  * err_push - prints error messsage if push isn't found
+ *  * push_err - prints error messsage if push isn't found
  *   * @opcode: opcode
  *    * @line_number: line number
  */
